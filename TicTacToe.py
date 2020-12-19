@@ -71,6 +71,8 @@ if __name__ == "__main__":
     while(r != 'q'):
         print("Make a move (row, col, player): ")
         r = input()
+        if r == 'q':
+            quit()
         col = input()
         player = input()
         ttt.make_move(int(r), int(col), int(player))
