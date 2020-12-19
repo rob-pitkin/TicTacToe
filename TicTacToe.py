@@ -1,3 +1,4 @@
+import math
 import numpy as np
 
 # enums for player 1 and player 2
@@ -68,6 +69,26 @@ class GameClass:
                     print('   |', end = "")
             print('')
             print("-------------")
+
+
+# def minimax-decision(state):
+#     return max(min-value(result(state,a)))
+
+# def max-value(state)
+#     if terminal-test(state):
+#         return utility(state)
+#     v = -(math.inf)
+#     for a in actions(state):
+#         v = max(v, min-value(restult(s,a)))
+#     return v
+
+# def min-value(state):
+#     if terminal-test(state):
+#         return utility(state)
+#     v = math.inf
+#     for a in actions(state):
+#         v = min(v, max-value(result(s,a)))
+#     return v
 
 if __name__ == "__main__":
     # create our game object
